@@ -10,12 +10,18 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   line-height: 1.62;
+  max-width: 640px;
   padding: 24px;
+}
+
+header {
+  margin: 24px 0 32px;
 }
 
 h1 {
   font-size: 32px;
   font-weight: 700;
+  margin-bottom: 12px;
 }
 
 h2 {
@@ -30,10 +36,60 @@ h3 {
   text-transform: uppercase;
 }
 
-a { color: #0B70D6; text-decoration: none;}
+#about {
+  margin: 32px 0 24px;
+}
+
+p {
+  margin: 12px 0;
+}
+
+a { color: #0B70D6; font-weight: 700; text-decoration: none; display: inline-block;}
 a:active { color: #F76F9D; }
 a:visited { color: #6030BF; }
 
+.btn {
+  background: #008585;
+  border: none;
+  border-radius: 8px;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.62;
+  padding: 12px 28px 16px 24px;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.portfolio {
+  color: #F76F9D;
+  font-size: 16px;
+  padding: 16px 0;
+}
+
+#signoff {
+  margin: 24px 0 72px;
+}
+
+.signature {
+  color: #6030BF;
+  font-family: 'Caveat', cursive;
+  font-size: 24px;
+  transform: skewY(-8deg);
+  margin-top: -24px;
+
+}
+
+#social a {
+  font-size: 16px;
+  font-weight: 400;
+}
+
 footer small {
+  display: inline-block;
   font-size: 12px;
+  margin: 24px 0;
 }
