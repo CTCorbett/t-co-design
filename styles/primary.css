@@ -8,36 +8,53 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {d
 * { box-sizing: border-box; }
 
 body {
-  color: #0F171F;
+  background: #FFF;
+  color: #0F5361;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   line-height: 1.62;
-  max-width: 480px;
+  max-width: 500px;
   padding: 32px;
+}
+
+body::before {
+  content: '';
+  height: 24px;
+  width: 100%;
+  background: rgb(255,221,51);
+  background: linear-gradient(90deg, rgba(255,221,51,1) 0%, rgba(250,148,75,1) 12%, rgba(247,111,157,1) 24%, rgba(96,48,191,1) 48%, rgba(11,112,214,1) 60%, rgba(0,133,133,1) 84%, rgba(0,158,79,1) 100%);
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9001;
 }
 
 *::selection { background: #FFDD33; color: #0F171F; }
 *::-moz-selection { background: #FFDD33; color: #0F171F; }
 
 header {
-  margin: 24px 0 32px;
+  margin: 48px 0 32px;
 }
 
 h1 {
+  color: #008585;
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 12px;
 }
 
 h2 {
+  color: #0F2E3D;
   font-weight: 700;
   line-height: 1.38;
 }
 
 h3 {
-  font-size: 16px;
+  color: #0F2E3D;
+  font-size: 12px;
   font-weight: 900;
-  letter-spacing: 12px;
+  letter-spacing: 7px;
   text-transform: uppercase;
   margin-bottom: 12px;
 }
@@ -51,6 +68,7 @@ p {
 }
 
 a { color: #0B70D6; font-weight: 700; text-decoration: none; display: inline-block;}
+a:hover, a:visited:hover { color: #0F5361; }
 a:active { color: #F76F9D; }
 a:visited { color: #6030BF; }
 
@@ -58,42 +76,49 @@ em {
   font-weight: 700;
 }
 
-.marketing {color:#FA893E;}
+.marketing {color:#F06C3C;}
 .product {color:#008585;}
 .iconography {color:#6030BF;}
-.identity {color:#F76F9D;}
+.identity {color:#F24949;}
 
+#files {
+  margin: 32px 0;
+}
 
 .btn {
   background: #008585;
   border: none;
   border-radius: 8px;
-  color: #FFF;
+  color: #F0FAF7;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.62;
-  margin-left: -8px;
-  margin-right: 16px;
+  margin: 0 12px 0 -8px;
   padding: 16px 24px 16px 20px;
   text-transform: uppercase;
 }
 
 .btn:hover {
   cursor: pointer;
+  background: #6030BF;
 }
 
 .portfolio {
   color: #F76F9D;
   font-size: 16px;
-  padding: 16px 0;
+  margin: 16px 0;
+}
+
+.portfolio:hover {
+  color: #6030BF;
 }
 
 #signoff {
-  margin: 24px 0 64px;
+  margin: 24px 0 72px;
 }
 
 .signature {
-  color: #6030BF;
+  color: #008585;
   font-family: 'Caveat', cursive;
   font-size: 24px;
   transform: skewY(-8deg);
@@ -106,6 +131,7 @@ em {
 }
 
 footer small {
+  color: #008585;
   display: inline-block;
   font-size: 12px;
   margin: 24px 0;
@@ -116,6 +142,9 @@ footer small {
 @media (min-width: 560px) {
   body {
     margin: 0 auto;
+  }
+  .btn {
+    margin-bottom: 24px;
   }
   .signature {
     margin-top: -32px;
