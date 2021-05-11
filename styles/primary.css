@@ -9,7 +9,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {d
 
 body {
   background: #FFF;
-  color: #0F5361;
+  color: #0F171F;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   line-height: 1.62;
@@ -39,8 +39,9 @@ header {
 
 h1 {
   color: #008585;
+  font-family: 'Special Elite', 'Roboto', monospace;
   font-size: 32px;
-  font-weight: 700;
+  font-weight: 800;
   margin-bottom: 12px;
 }
 
@@ -77,7 +78,7 @@ em {
 }
 
 .marketing {color:#F06C3C;}
-.product {color:#008585;}
+.product {color:#009E4F;}
 .iconography {color:#6030BF;}
 .identity {color:#F24949;}
 
@@ -104,13 +105,13 @@ em {
   background: #6030BF;
 }
 
-.portfolio {
+#portfolio {
   color: #F76F9D;
   font-size: 16px;
   margin: 16px 0;
 }
 
-.portfolio:hover {
+#portfolio:hover {
   color: #6030BF;
 }
 
