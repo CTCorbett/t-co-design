@@ -8,26 +8,12 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {d
 * { box-sizing: border-box; }
 
 body {
-  background: #FFF;
-  color: #0F171F;
+  background: #008585;
+  color: #DFF5F1;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   line-height: 1.62;
   max-width: 500px;
-  padding: 32px;
-}
-
-body::before {
-  content: '';
-  height: 12px;
-  width: 100%;
-  background: rgb(255,221,51);
-  background: linear-gradient(90deg, rgba(255,221,51,1) 0%, rgba(250,148,75,1) 12%, rgba(247,111,157,1) 24%, rgba(96,48,191,1) 48%, rgba(11,112,214,1) 60%, rgba(0,133,133,1) 84%, rgba(0,158,79,1) 100%);
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 9001;
 }
 
 *::selection { background: #FFDD33; color: #0F171F; }
@@ -38,7 +24,7 @@ header {
 }
 
 h1 {
-  color: #008585;
+  color: #DFF5F1;
   font-family: 'Special Elite', 'Roboto', monospace;
   font-size: 32px;
   font-weight: 800;
@@ -46,13 +32,13 @@ h1 {
 }
 
 h2 {
-  color: #0F2E3D;
+  color: #DFF5F1;
   font-weight: 700;
   line-height: 1.38;
 }
 
 h3 {
-  color: #0F2E3D;
+  color: #DFF5F1;
   font-size: 12px;
   font-weight: 900;
   letter-spacing: 7px;
@@ -68,7 +54,7 @@ p {
   margin: 12px 0;
 }
 
-a { color: #0B70D6; font-weight: 700; text-decoration: none; display: inline-block;}
+a { color: #DFF5F1; font-weight: 700; text-decoration: none; display: inline-block;}
 a:hover, a:visited:hover { color: #0F5361; }
 a:active { color: #F76F9D; }
 a:visited { color: #6030BF; }
@@ -121,7 +107,7 @@ em {
 }
 
 .signature {
-  color: #008585;
+  color: #DFF5F1;
   font-family: 'Caveat', cursive;
   font-size: 24px;
   transform: skewY(-8deg);
